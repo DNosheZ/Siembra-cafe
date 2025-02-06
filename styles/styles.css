@@ -1,14 +1,18 @@
 /* General */
 :root {
     --main-black: #100710;
-    --main-coffee: #28261b;
-    --main-green:#887751;
+    --main-coffee:#887751;
     --main-skin:#feeebc;
-    --main-white:white;
+    --main-white:#faf4eb;
+    --main-red:#d45f44;
+
+    --secondary-coffee:#6c5f40;
+    --terceary-coffee:#514730;
+
 }
 @font-face {
-    font-family: 'MyGoogleFont';
-    src: url('fonts/Kanit-Bold.ttf'),
+    font-family: 'MyTitleFont';
+    src: url(''),
   }
 
 /* Nav-bar */
@@ -45,13 +49,10 @@ h1{
 .hero-principal h2{
     font-size: 1.5rem;
 }
-.seccion-verde{
-    color:var(--main-white);
-    background-color: var(--main-green);
-}
+
 .seccion-titulo{
     font-size: 2rem;
-    font-family: 'MyGoogleFont';
+    font-family: 'MyTitleFont';
 }
 .seccion-texto{
     font-size:1.2rem;
@@ -97,6 +98,7 @@ p{
 .nav-link{
     font-size: 1.1rem;
 }
+
 /* Carrusel */
 .show-up-caraousel{
     height: 50%;
@@ -109,6 +111,7 @@ p{
 .carousel-p{
     font-size: 1.5rem;
 }
+
 /* About me */
 .who-we-are{
     font-size: 1.3rem;
@@ -119,24 +122,23 @@ p{
     height:auto;
     max-height: 100%;
 }
-/* Servicios sostenibles*/
-.foto-servicio{
-    justify-content: center;
-    text-align: center;
-    margin:1rem;
-}
-.foto-servicio img {
-    max-width: 100%; 
-    height: auto; 
-}
-.texto-servicio1, .texto-servicio2{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:1rem;
-}
 
+/*Shop*/
+.shop{
+    margin:2rem;
+}
+.btn{
+    background-color: var(--main-red);
+}
+.btn:hover{
+    background-color: var(--main-coffee);
+}
+.btn:active{
+    background-color: var(--main-coffee);
+}
+.card{
+    margin:1rem;
+}
 /*Contactanos*/
 .contact-us{
     margin:2rem;
