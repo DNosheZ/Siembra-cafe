@@ -1,0 +1,189 @@
+/* General */
+:root {
+    --main-black: #100710;
+    --main-coffee: #28261b;
+    --main-green:#887751;
+    --main-skin:#feeebc;
+    --main-white:white;
+}
+@font-face {
+    font-family: 'MyGoogleFont';
+    src: url('fonts/Kanit-Bold.ttf'),
+  }
+
+/* Nav-bar */
+.navbar{
+    padding: 1rem;
+    
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-item{
+    color:var(--main-black);
+}
+
+body{
+    background-color:var(--main-coffee);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+h1{
+    font-size: 2.5rem;
+}
+.texto-blanco{
+    color: var(--main-white);
+}
+.hero-principal h2{
+    font-size: 1.5rem;
+}
+.seccion-verde{
+    color:var(--main-white);
+    background-color: var(--main-green);
+}
+.seccion-titulo{
+    font-size: 2rem;
+    font-family: 'MyGoogleFont';
+}
+.seccion-texto{
+    font-size:1.2rem;
+    padding:15px 0;
+    text-align: center;
+}
+.row{
+    margin: 3rem 0;
+}
+button{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    background-color: var(--main-coffee);
+    border-radius: 40%;
+    border: rgba(var(--main-coffee),0.5);
+    box-shadow: var(--main-black);
+}
+h1{
+    font-size: 65px;
+}
+h2{
+    font-size: 45px;
+}
+p{
+    font-size: 30px;
+}
+.text-justify{
+    text-align: justify;
+}
+.texto-naranja{
+    color:var(--main-white);
+    margin:1.5rem;
+}
+.btn-primary{
+    background-color:var(--main-orange);
+    border:none;
+}
+
+/* Nav-bar */
+.nav-link{
+    font-size: 1.1rem;
+}
+/* Carrusel */
+.show-up-caraousel{
+    height: 50%;
+    margin:5rem 0;
+    
+}
+.carousel-item img{
+    height:40rem;
+}
+.carousel-p{
+    font-size: 1.5rem;
+}
+/* About me */
+.who-we-are{
+    font-size: 1.3rem;
+}
+.who-we-are img{
+    justify-content: center;
+    text-align: center;
+    height:auto;
+    max-height: 100%;
+}
+/* Servicios sostenibles*/
+.foto-servicio{
+    justify-content: center;
+    text-align: center;
+    margin:1rem;
+}
+.foto-servicio img {
+    max-width: 100%; 
+    height: auto; 
+}
+.texto-servicio1, .texto-servicio2{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:1rem;
+}
+
+/*Contactanos*/
+.contact-us{
+    margin:2rem;
+}
+  
+
+
+/* Responsive */
+@media screen and (max-width: 992px) { /* Para pantallas pequeñas */
+    .texto-servicio2, .texto-servicio1 {
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+}
+
+@media screen and (min-width: 992px) { /* Para pantallas medianas y grandes */
+    .row {
+        display: flex;
+        align-items: center; /* Alinea el contenido verticalmente */
+    }
+    .texto-servicio1 {
+        text-align: right;
+        justify-content: flex-end;
+    }
+    .texto-servicio2 {
+        text-align: left; /* En pantallas medianas/grandes, el texto está alineado a la izquierda */
+        justify-content: flex-start;
+    }
+
+    .foto-servicio {
+        flex: 1; /* Imagen ocupa la mitad del ancho */
+    }
+
+    .texto-servicio2, .texto-servicio1{
+        flex: 1; /* Texto ocupa la otra mitad */
+    }
+}
+
+
+@media screen and (max-width:767px){
+    .navbar-brand{
+        display:none;
+    }
+}
+
+@media screen and (min-width:700px){
+    .hero-inferior-imagen{
+        max-width: 600px;
+    }
+    
+}
