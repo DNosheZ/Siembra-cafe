@@ -16,7 +16,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbar-toggler">
             <img id="header-img" class="navbar-brand" width="180" src="./images/simbra cafe.png" alt="logo"></img>
-            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <!-- <ul class="navbar-nav d-flex justify-content-center align-items-center">
               
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./about-us.html"><h2>Quienes somos</h2></a>
@@ -24,15 +24,99 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./coffee.html"><h2>Café</h2></a>
               </li>
-              <!-- <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./products.html"><h2>Productos</h2></a>
-              </li> -->
+              </li>
               
-            </ul>
+            </ul> -->
           </div>
         </div>
     </nav>
+    <section class="hero-siembra">
+      <img class="hero-bg" src="./images/hero/hero-cover.jpg" alt="" loading="eager" aria-hidden="true">
+      <div class="hero-overlay" aria-hidden="true"></div>
 
+      <div class="container hero-content">
+        <div class="row">
+          <!-- Columna principal: ocupa todo en móvil, 7/12 en desktop -->
+          <div class="col-12 col-lg-7">
+            <h1 class="mb-2">Siembra Café</h1>
+            <p class="lead mb-3">
+              Del bosque andino a tu taza. Cosecha a mano, procesos limpios y trazabilidad completa desde nuestra finca.
+            </p>
+
+            <!-- CTAs: se apilan en móvil y se alinean en fila en >=sm -->
+            <div class="d-flex flex-column flex-sm-row gap-2">
+              <!-- Reemplaza los href con tus enlaces reales -->
+              <a href="./coffee.html" class="btn btn-coffee">Comprar café</a>
+              <a href="#conoce" class="btn btn-skin">Conoce la finca</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sello / badge -->
+      <a href="./about-us.html" class="badge-filosofia">
+        Nuestra<br>filosofía
+      </a>
+    </section>
+
+<!-- MANIFIESTO DE MARCA  -->
+    <section class="py-5 manifesto-table-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12 col-lg-8">
+            <h2 class="mb-2">Nuestra esencia</h2>
+            <p class="text-secondary mb-0">Tres pilares que nos guían desde la siembra hasta tu taza.</p>
+          </div>
+        </div>
+
+        <!-- Tabla / Grid -->
+        <div class="manifesto-table rounded-4">
+          <!-- Columna 1 -->
+          <article class="manifesto-cell p-4 p-md-5 text-center">
+            <img
+              class="pillar-img mb-3"
+              src="./images/manifiesto/leaf.png"
+              alt="Suelo vivo"
+              width="72" height="72" loading="lazy">
+            <h3 class="h5 mb-2">Suelo vivo</h3>
+            <p class="mb-0">
+              Compost propio, cobertura vegetal y manejo de sombra para preservar biodiversidad y humedad.
+            </p>
+          </article>
+
+          <!-- Columna 2 -->
+          <article class="manifesto-cell p-4 p-md-5 text-center">
+            <img
+              class="pillar-img mb-3"
+              src="./images/manifiesto/beans.png"
+              alt="Cosecha selectiva"
+              width="72" height="72" loading="lazy">
+            <h3 class="h5 mb-2">Cosecha selectiva</h3>
+            <p class="mb-0">
+              Recolectamos solo cerezas maduras para maximizar dulzor y claridad en taza.
+            </p>
+          </article>
+
+          <!-- Columna 3 -->
+          <article class="manifesto-cell p-4 p-md-5 text-center">
+            <img
+              class="pillar-img mb-3"
+              src="./images/manifiesto/money.png"
+              alt="Precio justo"
+              width="72" height="72" loading="lazy">
+            <h3 class="h5 mb-2">Precio justo</h3>
+            <p class="mb-0">
+              Relaciones de largo plazo y remuneración digna para quienes hacen posible cada cosecha.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+<!--  CARRUSEL ILUSTRATIVO -->
     <section class="show-up-caraousel">
         <div class="container show-up-caraousel-principal">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -45,7 +129,7 @@
                   </div>
                   <div class="carousel-item">
                     <a>
-                        <img src="./images/carrusel-inicio/1.jpg  " class="d-block w-100" alt="" styles="width:5%">
+                        <img src="./images/carrusel-inicio/1.jpg " class="d-block w-100" alt="" styles="width:5%">
                         <p class="carousel-p"></p>
                     </a>
                   </div>
@@ -76,42 +160,221 @@
         </div>
     </section>
 
-    
-
-    <footer>
-      <section class="contacto" style="width: 100%; margin:3rempx; padding:0.5rem; background-color: var(--terceary-coffee);">
-          <div class="container">
-              <div class="text-center justify-content-center align-items-center">
-                  <div class="row" style="margin:1rem;">
-                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 seccion-titulo text-align-center">
-                        
-                      </div>
-                      
-                  </div>
-                  <div class="row justify-content-center">
-                      <div class="col-12 col-sm-12 col-md-3 col-lg-3"> 
-                          <a target="_blank" href="https://wa.me/">
-                          <img src="./images/logosExt/business_whatsapp_icon_250128.png" alt="WA Bussines" style="width: 50px; height: 50px;">
-                          </a>
-                      </div>
-                      <div class="col-12 col-sm-12 col-md-3 col-lg-3"> 
-                          <a target="_blank" href="">
-                              <img src="./images/logosExt/mail_email_message_electronic_online_web_icon-icons.com_59986.png" alt="Mail" style="width: 50px; height: 50px;">
-                          </a>
-                      </div>
-                      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-                          <a target="_blank" href="https://www.facebook.com/Solucionesconenergia?mibextid=ZbWKwL">
-                              <img src="./images/logosExt/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
-                          </a>
-                      </div>
-  
-                      
-                      
-                  </div>
-                  
-              </div>
+<!-- LOTE DESTACADO -->
+    <section class="py-5 featured-lot position-relative">
+      <div class="lot-bg" aria-hidden="true"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-6">
+            <div class="ratio ratio-4x3 rounded-4 overflow-hidden shadow-sm">
+              <img src="./images/info-corpo/valores.jpg" alt="Lote destacado Siembra Café" class="w-100 h-100 object-fit-cover">
+            </div>
           </div>
+          <div class="col-12 col-lg-6">
+            <span class="badge text-bg-light border me-2 mb-2">Edición de temporada</span>
+            <span class="badge text-bg-light border me-2 mb-2">Tueste fresco</span>
+
+            <h2 class="mt-2 mb-2">Lote destacado: <span class="fw-semibold">El Bosque</span></h2>
+
+            <ul class="list-unstyled d-flex flex-wrap gap-2 small mb-3">
+              <li class="chip">Variedad: Caturra</li>
+              <li class="chip">Proceso: Honey</li>
+              <li class="chip">Altitud: 1.850 m</li>
+              <li class="chip">Cosecha: 2025-I</li>
+              <li class="chip">Puntaje: 86.5 SCA</li>
+            </ul>
+
+            <p class="mb-3">Panela, flor blanca y caramelo suave. Acidez brillante, cuerpo medio y final prolongado.</p>
+
+            <form class="row g-2 align-items-end">
+              <div class="col-6 col-md-4">
+                <label class="form-label small">Presentación</label>
+                <select class="form-select">
+                  <option>250 g</option>
+                  <option>500 g</option>
+                  <option>1 kg</option>
+                </select>
+              </div>
+              <div class="col-6 col-md-4">
+                <label class="form-label small">Molienda</label>
+                <select class="form-select">
+                  <option>Grano</option>
+                  <option>V60</option>
+                  <option>Prensa francesa</option>
+                  <option>Espresso</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-4 d-grid">
+                <a href="#comprar" class="btn btn-coffee">Añadir al carrito</a>
+              </div>
+            </form>
+
+            <div class="d-flex flex-wrap gap-3 align-items-center mt-3 small text-secondary">
+              <div class="d-inline-flex align-items-center gap-2">
+                <span class="dot"></span> Envío 24–48 h
+              </div>
+              <div class="d-inline-flex align-items-center gap-2">
+                <span class="dot"></span> Pago seguro
+              </div>
+              <div class="d-inline-flex align-items-center gap-2">
+                <span class="dot"></span> Devoluciones fáciles
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- LÍNEA TEMPORAL -->
+    <section class="py-5 timeline">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12 col-lg-8">
+            <h2 class="mb-2">De la semilla a tu taza</h2>
+            <p class="text-secondary mb-0">Nuestro proceso en pasos claros y honestos.</p>
+          </div>
+        </div>
+
+        <div class="timeline-track position-relative">
+          <!-- Paso 1 -->
+          <div class="timeline-item row g-3 align-items-center">
+            <div class="col-12 col-md-5 order-md-2">
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+                <img src="/assets/img/timeline-1.jpg" alt="Siembra y manejo de sombra" class="w-100 h-100 object-fit-cover">
+              </div>
+            </div>
+            <div class="col-12 col-md-7">
+              <h3 class="h5 mb-1">Siembra & sombra</h3>
+              <p class="mb-0">Vivero propio, selección de plántulas y diseño de sombra con especies nativas.</p>
+            </div>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="timeline-item row g-3 align-items-center">
+            <div class="col-12 col-md-5">
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+                <img src="/assets/img/timeline-2.jpg" alt="Floración y cuidado del suelo" class="w-100 h-100 object-fit-cover">
+              </div>
+            </div>
+            <div class="col-12 col-md-7">
+              <h3 class="h5 mb-1">Floración & suelo vivo</h3>
+              <p class="mb-0">Cobertura vegetal, compost de finca y control de erosión para mantener suelos fértiles.</p>
+            </div>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="timeline-item row g-3 align-items-center">
+            <div class="col-12 col-md-5 order-md-2">
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+                <img src="/assets/img/timeline-3.jpg" alt="Cosecha selectiva" class="w-100 h-100 object-fit-cover">
+              </div>
+            </div>
+            <div class="col-12 col-md-7">
+              <h3 class="h5 mb-1">Cosecha selectiva</h3>
+              <p class="mb-0">Solo cerezas en punto óptimo, con doble selección para asegurar consistencia.</p>
+            </div>
+          </div>
+
+          <!-- Paso 4 -->
+          <div class="timeline-item row g-3 align-items-center">
+            <div class="col-12 col-md-5">
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+                <img src="/assets/img/timeline-4.jpg" alt="Beneficio y secado" class="w-100 h-100 object-fit-cover">
+              </div>
+            </div>
+            <div class="col-12 col-md-7">
+              <h3 class="h5 mb-1">Beneficio & secado</h3>
+              <p class="mb-0">Fermentaciones controladas y secado lento en patios y marquesinas.</p>
+            </div>
+          </div>
+
+          <!-- Paso 5 -->
+          <div class="timeline-item row g-3 align-items-center">
+            <div class="col-12 col-md-5 order-md-2">
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+                <img src="/assets/img/timeline-5.jpg" alt="Tueste y empaque" class="w-100 h-100 object-fit-cover">
+              </div>
+            </div>
+            <div class="col-12 col-md-7">
+              <h3 class="h5 mb-1">Tueste & empaque</h3>
+              <p class="mb-0">Perfiles por lote y empaque de válvula con fecha de tueste para conservar frescura.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+<!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4"
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Siembra Café
+              </h6>
+              <p>
+                Bienvenido
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="./coffee.html" class="text-reset">Nuestro Café</a>
+              </p>
+              <p>
+                <a href="./about-us.html" class="text-reset">Sobre nosotros</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Legal</h6>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> +57</p>
+              <p><i class="fas fa-print me-3"></i> +57</p>
+            </div>
+          </div>
+        </div>
       </section>
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+        <div class="me-5 d-none d-lg-block">
+          <span>Conéctate con nosotros en las redes sociales:</span>
+        </div>
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f">
+              <img src="./images/logosExt/facebook.png" alt="Facebook" style="width: 20px; height: 20px;">
+            </i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-gmail">
+              <img src="./images/logosExt/gmail.png" alt="Gmail" style="width: 20px; height: 20px;">
+            </i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-whatsapp">
+              <img src="./images/logosExt/whatsapp.png" alt="WhatsApp" style="width: 20px; height: 20px;">
+            </i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin">
+              <img src="./images/logosExt/linkedin.png" alt="LinkedIn" style="width: 20px; height: 20px;">
+            </i>
+          </a>
+        </div>
+      </section>
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2025 Copyright:
+        <a class="text-reset fw-bold" href="https://dnoshez.github.io">ProjectZ</a>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

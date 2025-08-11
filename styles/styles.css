@@ -120,6 +120,250 @@ p{
     font-size: 1.1rem;
 }
 
+/* ====== HERO ====== */
+.hero-siembra{
+    position: relative;
+    min-height: 68vh;              /* mobile-first */
+    display: grid;
+    align-items: end;               /* texto en la parte baja en móviles */
+    color: var(--main-white);
+    background-color: var(--main-black);
+    isolation: isolate;
+    overflow: clip;
+}
+/* Fondo */
+.hero-siembra .hero-bg{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    filter: saturate(.95) contrast(1.05);
+}
+/* Overlay para legibilidad del texto */
+.hero-siembra .hero-overlay{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+    radial-gradient(900px 520px at 18% 30%, rgba(16,7,16,0) 0%, rgba(16,7,16,.25) 60%, rgba(16,7,16,.5) 100%),
+    linear-gradient(180deg, rgba(16,7,16,.45) 0%, rgba(16,7,16,.65) 100%);
+}
+
+/* Caja de contenido */
+.hero-content{
+    padding-block: 2.25rem 2.75rem;  /* más aire abajo en móviles */
+}
+
+.hero-siembra h1{
+    font-weight: 700;
+    line-height: 1.1;
+    text-shadow: 0 1px 0 rgba(16,7,16,.6), 0 6px 24px rgba(0,0,0,.35);
+    margin-bottom: .5rem;
+}
+.hero-siembra p.lead{
+    text-shadow: 0 1px 0 rgba(16,7,16,.6), 0 6px 24px rgba(0,0,0,.35);
+    margin-bottom: 1rem;
+}
+
+/* Botones (mobile-first) */
+.btn-coffee{
+    --bs-btn-bg: var(--main-coffee);
+    --bs-btn-border-color: var(--main-coffee);
+    --bs-btn-hover-bg: var(--secondary-coffee);
+    --bs-btn-hover-border-color: var(--secondary-coffee);
+    --bs-btn-color: var(--main-white);
+    --bs-btn-hover-color: var(--main-white);
+    border-radius: 999px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.25);
+    padding: .6rem 1.1rem;
+    font-weight: 600;
+}
+.btn-skin{
+    --bs-btn-bg: var(--main-skin);
+    --bs-btn-border-color: var(--main-skin);
+    --bs-btn-color: var(--main-black);
+    --bs-btn-hover-bg: #f4e3a5; /* tono cercano */
+    --bs-btn-hover-border-color: #f4e3a5;
+    border-radius: 999px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    padding: .6rem 1.1rem;
+    font-weight: 600;
+}
+
+/* Sello redondo “Nuestra filosofía” */
+.badge-filosofia{
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 120px;
+    height: 120px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: var(--main-red);
+    color: var(--main-white);
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,.25), inset 0 0 0 3px var(--main-white);
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1.05;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+.badge-filosofia:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px rgba(0,0,0,.30), inset 0 0 0 3px var(--main-white);
+}
+
+/* ====== BREAKPOINTS ====== */
+@media (min-width: 576px){
+    .hero-siembra{ min-height: 72vh; }
+    .badge-filosofia{ right: 18px; bottom: 18px; width: 135px; height: 135px; }
+}
+@media (min-width: 768px){
+    .hero-siembra{ align-items: center; } /* en tablets/desktop centrado vertical */
+    .hero-content{ padding-block: 4.5rem; }
+    .hero-siembra h1{ font-size: clamp(2.25rem, 4.2vw, 3.5rem); }
+    .hero-siembra p.lead{ font-size: clamp(1.05rem, 1.6vw, 1.25rem); }
+    .badge-filosofia{ right: clamp(18px, 3vw, 40px); bottom: clamp(18px, 3vw, 40px); width: clamp(140px, 16vw, 170px); height: clamp(140px, 16vw, 170px); }
+}
+@media (prefers-reduced-motion: reduce){
+    .badge-filosofia{ transition: none; }
+}
+
+/* Utils */
+.object-fit-cover{ object-fit: cover; }
+
+/* ================== MANIFIESTO ================== */
+.manifesto h2{ color: var(--main-black); }
+.manifesto .text-secondary{ color: #6b6b6b !important; }
+.manifesto-card{
+  background: var(--main-white);
+  border-radius: 1rem;
+}
+.manifesto-card .icon-wrap{
+  width: 48px; height: 48px;
+  display: grid; place-items: center;
+  color: var(--main-white);
+  background: linear-gradient(135deg, var(--main-coffee), var(--secondary-coffee));
+  border-radius: .9rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+}
+.manifesto-card h3{ color: var(--terceary-coffee); }
+.manifesto-card p{ color: var(--main-black); }
+
+/* ===== Manifiesto (tabla limpia) ===== */
+.manifesto-table-section h2{ color: var(--main-black); }
+.manifesto-table-section .text-secondary{ color:#6b6b6b !important; }
+
+/* Contenedor tabla (grid) */
+.manifesto-table{
+  display: grid;
+  grid-template-columns: 1fr;        /* mobile-first */
+  background: var(--main-white);
+  border: 1px solid rgba(16,7,16,.08);
+  overflow: hidden;                  /* redondeo limpio */
+}
+
+/* Celdas */
+.manifesto-cell{
+  color: var(--main-black);
+}
+
+/* Divisores en mobile: líneas horizontales entre celdas */
+.manifesto-cell:not(:first-child){
+  border-top: 1px solid rgba(16,7,16,.08);
+}
+
+/* Títulos */
+.manifesto-cell h3{
+  color: var(--terceary-coffee);
+  letter-spacing: .2px;
+}
+
+/* Imagen PNG del pilar (sin efectos, diseño limpio) */
+.pillar-img{
+  display: inline-block;
+  vertical-align: middle;
+  /* sin sombras/contornos para mantener el estilo impoluto */
+}
+
+/* A partir de md: 3 columnas y divisores verticales */
+@media (min-width: 768px){
+  .manifesto-table{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .manifesto-cell{
+    border-top: none;                /* quitamos divisores horizontales */
+  }
+  .manifesto-cell + .manifesto-cell{
+    border-left: 1px solid rgba(16,7,16,.08);  /* divisores verticales */
+  }
+}
+
+/* Accesibilidad: si el usuario prefiere menos movimiento, no animamos nada */
+@media (prefers-reduced-motion: reduce){
+  /* (no hay animaciones en este bloque) */
+}
+
+/* ================== LOTE DESTACADO ================== */
+.featured-lot{ background: linear-gradient(180deg, #ffffff 0%, #fbfaf6 100%); }
+.featured-lot .lot-bg{
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(800px 400px at 10% 10%, rgba(136,119,81,.08), transparent 60%),
+    radial-gradient(600px 300px at 90% 90%, rgba(212,95,68,.07), transparent 60%);
+  pointer-events: none;
+}
+.chip{
+  padding: .35rem .6rem; border-radius: 999px;
+  background: var(--main-white);
+  border: 1px solid rgba(0,0,0,.06);
+}
+.dot{ width: 8px; height: 8px; border-radius: 50%; background: var(--main-coffee); display: inline-block; }
+.btn-coffee{
+  --bs-btn-bg: var(--main-coffee);
+  --bs-btn-border-color: var(--main-coffee);
+  --bs-btn-hover-bg: var(--secondary-coffee);
+  --bs-btn-hover-border-color: var(--secondary-coffee);
+  --bs-btn-color: var(--main-white);
+  --bs-btn-hover-color: var(--main-white);
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.2);
+}
+
+/* ================== LÍNEA TEMPORAL ================== */
+.timeline h2{ color: var(--main-black); }
+.timeline .timeline-track{
+  display: grid; gap: 2rem;
+  position: relative;
+}
+.timeline .timeline-item{
+  padding-left: 1.5rem; /* guía en mobile */
+  position: relative;
+}
+.timeline .timeline-item::before{
+  content:""; position: absolute; left:.4rem; top:.25rem; bottom:.25rem;
+  width: 2px; background: rgba(16,7,16,.1);
+}
+.timeline .timeline-item::after{
+  content:""; position: absolute; left:0; top:.5rem;
+  width: .8rem; height: .8rem; border-radius: 50%;
+  background: var(--main-red); box-shadow: 0 0 0 3px var(--main-white);
+}
+
+/* Alternado y línea centrada en >= md */
+@media (min-width: 768px){
+  .timeline .timeline-track{ gap: 2.75rem; }
+  .timeline .timeline-item{ padding-left: 0; }
+  .timeline .timeline-item::before{
+    left: 50%; transform: translateX(-50%);
+  }
+  .timeline .timeline-item::after{
+    left: 50%; transform: translate(-50%, 0);
+  }
+}
 /* Carrusel */
 .show-up-caraousel{
     height: 50%;
