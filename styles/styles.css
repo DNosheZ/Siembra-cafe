@@ -237,7 +237,7 @@ p{
 
 /* ================== MANIFIESTO ================== */
 .manifesto h2{ color: var(--main-black); }
-.manifesto .text-secondary{ color: #6b6b6b !important; }
+.manifesto .text-secondary{ color: #ffffff !important; }
 .manifesto-card{
   background: var(--main-white);
   border-radius: 1rem;
@@ -255,7 +255,7 @@ p{
 
 /* ===== Manifiesto (tabla limpia) ===== */
 .manifesto-table-section h2{ color: var(--main-black); }
-.manifesto-table-section .text-secondary{ color:#6b6b6b !important; }
+.manifesto-table-section .text-secondary{ color:#ffffff !important; }
 
 /* Contenedor tabla (grid) */
 .manifesto-table{
