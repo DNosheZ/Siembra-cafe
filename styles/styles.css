@@ -339,6 +339,7 @@ p{
   display: grid; gap: 2rem;
   position: relative;
 }
+.timeline p{ color: #ffffff}
 .timeline .timeline-item{
   padding-left: 1.5rem; /* guía en mobile */
   position: relative;
