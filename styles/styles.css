@@ -32,9 +32,17 @@
     align-items: center;
     justify-content: space-between;
 }
-.nav-item{
-    color:var(--main-black);
+.nav-item h2{
+    color:#ffffff;
 }
+/* Fondo de madera adaptable para el navbar */
+.navbar-wood {
+  background-image: url("../images/fondo-navbar.jpg");
+  
+}
+
+
+
 
 body{
     background-color:var(--main-coffee);
@@ -193,7 +201,7 @@ p{
 }
 
 /* Sello redondo “Nuestra filosofía” */
-.badge-filosofia{
+/* .badge-filosofia{
     position: absolute;
     right: 12px;
     bottom: 12px;
@@ -214,25 +222,7 @@ p{
 .badge-filosofia:hover{
     transform: translateY(-2px);
     box-shadow: 0 14px 34px rgba(0,0,0,.30), inset 0 0 0 3px var(--main-white);
-}
-
-/* ====== BREAKPOINTS ====== */
-@media (min-width: 576px){
-    .hero-siembra{ min-height: 72vh; }
-    .badge-filosofia{ right: 18px; bottom: 18px; width: 135px; height: 135px; }
-}
-@media (min-width: 768px){
-    .hero-siembra{ align-items: center; } /* en tablets/desktop centrado vertical */
-    .hero-content{ padding-block: 4.5rem; }
-    .hero-siembra h1{ font-size: clamp(2.25rem, 4.2vw, 3.5rem); }
-    .hero-siembra p.lead{ font-size: clamp(1.05rem, 1.6vw, 1.25rem); }
-    .badge-filosofia{ right: clamp(18px, 3vw, 40px); bottom: clamp(18px, 3vw, 40px); width: clamp(140px, 16vw, 170px); height: clamp(140px, 16vw, 170px); }
-}
-@media (prefers-reduced-motion: reduce){
-    .badge-filosofia{ transition: none; }
-}
-
-/* Utils */
+} */
 .object-fit-cover{ object-fit: cover; }
 
 /* ================== MANIFIESTO ================== */
@@ -288,25 +278,6 @@ p{
   vertical-align: middle;
   /* sin sombras/contornos para mantener el estilo impoluto */
 }
-
-/* A partir de md: 3 columnas y divisores verticales */
-@media (min-width: 768px){
-  .manifesto-table{
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .manifesto-cell{
-    border-top: none;                /* quitamos divisores horizontales */
-  }
-  .manifesto-cell + .manifesto-cell{
-    border-left: 1px solid rgba(16,7,16,.08);  /* divisores verticales */
-  }
-}
-
-/* Accesibilidad: si el usuario prefiere menos movimiento, no animamos nada */
-@media (prefers-reduced-motion: reduce){
-  /* (no hay animaciones en este bloque) */
-}
-
 /* ================== LOTE DESTACADO ================== */
 .featured-lot{ background: linear-gradient(180deg, #ffffff 0%, #fbfaf6 100%); }
 .featured-lot .lot-bg{
@@ -352,18 +323,6 @@ p{
   content:""; position: absolute; left:0; top:.5rem;
   width: .8rem; height: .8rem; border-radius: 50%;
   background: var(--main-red); box-shadow: 0 0 0 3px var(--main-white);
-}
-
-/* Alternado y línea centrada en >= md */
-@media (min-width: 768px){
-  .timeline .timeline-track{ gap: 2.75rem; }
-  .timeline .timeline-item{ padding-left: 0; }
-  .timeline .timeline-item::before{
-    left: 50%; transform: translateX(-50%);
-  }
-  .timeline .timeline-item::after{
-    left: 50%; transform: translate(-50%, 0);
-  }
 }
 /* Carrusel */
 .show-up-caraousel{
@@ -415,6 +374,57 @@ a:active{
 .contact-us{
     margin:2rem;
 }
+/* ====== BREAKPOINTS ====== */
+@media (min-width: 576px){
+    .hero-siembra{ min-height: 72vh; }
+    .badge-filosofia{ right: 18px; bottom: 18px; width: 135px; height: 135px; }
+}
+@media (min-width: 768px){
+    .hero-siembra{ align-items: center; } /* en tablets/desktop centrado vertical */
+    .hero-content{ padding-block: 4.5rem; }
+    .hero-siembra h1{ font-size: clamp(2.25rem, 4.2vw, 3.5rem); }
+    .hero-siembra p.lead{ font-size: clamp(1.05rem, 1.6vw, 1.25rem); }
+    .badge-filosofia{ right: clamp(18px, 3vw, 40px); bottom: clamp(18px, 3vw, 40px); width: clamp(140px, 16vw, 170px); height: clamp(140px, 16vw, 170px); }
+}
+@media (prefers-reduced-motion: reduce){
+    .badge-filosofia{ transition: none; }
+}
+
+/* Utils */
+
+
+/* A partir de md: 3 columnas y divisores verticales */
+@media (min-width: 768px){
+  .manifesto-table{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .manifesto-cell{
+    border-top: none;                /* quitamos divisores horizontales */
+  }
+  .manifesto-cell + .manifesto-cell{
+    border-left: 1px solid rgba(16,7,16,.08);  /* divisores verticales */
+  }
+}
+
+/* Accesibilidad: si el usuario prefiere menos movimiento, no animamos nada */
+@media (prefers-reduced-motion: reduce){
+  /* (no hay animaciones en este bloque) */
+}
+
+
+
+/* Alternado y línea centrada en >= md */
+@media (min-width: 768px){
+  .timeline .timeline-track{ gap: 2.75rem; }
+  .timeline .timeline-item{ padding-left: 0; }
+  .timeline .timeline-item::before{
+    left: 50%; transform: translateX(-50%);
+  }
+  .timeline .timeline-item::after{
+    left: 50%; transform: translate(-50%, 0);
+  }
+}
+
   
 
 
