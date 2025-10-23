@@ -46,6 +46,7 @@
 
 body{
     background-color:var(--main-coffee);
+    min-width: 100vh;
 }
 section{
     display: flex;
